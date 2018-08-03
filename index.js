@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 
 const base = path.join(process.cwd(), 'config');
-const environment = process.env.NODE_ENV || 'development';
+const environment = process.env.CONFIG_ENV || 'development';
 const configurations = [
   path.join(base, 'default.json'),
   path.join(base, environment + '.json'),
